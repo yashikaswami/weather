@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="weather.css">
+    
+</head>
+<body >
+   
+    
+    <div class="card">
+
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button>
+                <img src="search.png">
+            </button>
+        </div>
+
+        <div class="error">
+            <p>"Invalid City Name"</p>
+            <p>Check the Spellings or enter the correct city Name to get the weather Information.</p>
+        </div>
+
+
+        <div id="date">
+
+        </div>
+
+        
+        <div class="weather">
+
+            <section>
+            <img src="rain.png" class="weather-icon">
+            
+            <h1 class="temp"></h1>
+                <div class="grid">
+            <h3 class="city"><span class="cityname">City:</span> <span class="name">Yashik</span></h3>
+            <h3 class="country"><span>Country:</span> </h3>
+            <h3 class="capital"><span>Capital:</span> </h3>
+            <h3 class="continent"><span>Continent:</span> </h3>
+            <h3 class="currency"><span>Currency:</span> </h3>
+            <h3 class="languages"><span>Languages:</span> </h3>
+            <h3 class="borders"><span>Borders:</span></h3>
+            <h3 class="landlocked"><span>Landlocked:</span> </h3>
+            
+        </div>
+        <h3 style="margin: 5px auto; cursor: pointer;" class="map"><a href="https://www.google.com/maps/?q=latitude,longitude">Click Here to Explore City on Map</a></h3>
+            </section>
+
+            <div class="details">
+                
+                <div class="col">
+                    <img src="humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>         
+                </div>
+
+                <div class="col">
+                    <img src="wind.png">
+                    <div>
+                        <p class="wind">15Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+
+
+    <script src="weather.js"></script>
+    <script src="date.js"></script>
+
+    
+</body>
+</html>
